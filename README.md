@@ -37,11 +37,11 @@ Para instalar o projeto, siga os passos abaixo:
 
 1. Clone o repositório do Player de Conteúdo:
    ```sh
-   git clone https://github.com/seu-usuario/player-de-conteudo.git
+   git clone https://github.com/Borgeta-code/Learning-Rocks-Challenge-Frontend.git
    ```
 2. Acesse o diretório do projeto:
    ```sh
-   cd player-de-conteudo
+   cd Learning-Rocks-Challenge-Frontend
    ```
 3. Instale as dependências:
    ```sh
