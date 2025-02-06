@@ -1,0 +1,37 @@
+{
+  "name": "interactive-player",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "core-js": "^3.25.3",
+    "nuxt": "^2.15.8",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
+    "@nuxtjs/composition-api": "^0.34.0",
+    "@nuxtjs/tailwindcss": "^6.13.1",
+    "@vue/test-utils": "^1.3.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^29.7.0",
+    "flush-promises": "^1.0.2",
+    "jest": "^29.7.0",
+    "jest-serializer-vue": "^3.1.0",
+    "jsdom": "^26.0.0",
+    "jsdom-global": "^3.0.2",
+    "tailwindcss": "^3.4.17",
+    "vue-jest": "^3.0.7",
+    "vue-template-compiler": "^2.7.16"
+  }
+}
