@@ -2,13 +2,9 @@
 
 Player de Conteúdo é um desafio da Learning Rocks. O projeto foi construído com **Nuxt 2** e **Vue 2**, utilizando diversas tecnologias para criar um player funcional e dinâmico.
 
-## 🎯 Decisões Técnicas e Abordagem
+## 📰 OBS
 
-Apesar de ser um código relativamente simples, busquei seguir as melhores práticas atuais durante o desenvolvimento. Tenho menos experiência com Vue, mas aproveitei o projeto como uma oportunidade de aprendizado e consegui evoluir bastante no uso da tecnologia.
-
-Inicialmente, encontrei alguns desafios ao integrar o GraphQL com Apollo. O servidor apresentava erros genéricos com status 400, dificultando a depuração. O problema estava relacionado a restrições de CORS no backend. A solução foi adicionar configurações adequadas de CORS no servidor e habilitar logs mais detalhados para identificar e resolver os erros mais rapidamente.
-
-Támbem ao escrever os testes para o componente Player, tive dificuldades porque o watcher da prop content disparava automaticamente o método fetchContentDetail (devido ao immediate: true), sobrescrevendo os valores definidos manualmente nos testes e impedindo a renderização dos elementos esperados. A solução foi sobrescrever fetchContentDetail com um jest.fn() nos testes que não precisavam da chamada real, garantindo que os estados simulados permanecessem intactos.
+Nesta branch, você pode encontrar a integração do desafio de backend e frontend, onde eu adicionei o provisionamento de texto. Para isso, é necessário configurar o backend modificado por mim, seguindo o passo a passo descrito abaixo.
 
 ## 🚀 Começando
 
@@ -27,7 +23,7 @@ Antes de iniciar o projeto, é necessário configurar a integração com o backe
 
 1. Clone o repositório do backend:
    ```sh
-   git clone https://github.com/skore-io/challenge.git
+   git clone https://github.com/Borgeta-code/Learning-Rocks-Challenge-Backend
    ```
 2. Siga as instruções do repositório para configurar e rodar o backend na sua máquina.
 

@@ -161,6 +161,18 @@ export default {
           company_id: "5e444e9c-66a9-4004-bde5-db5e614e5c34",
           created_at: "2025-02-03T22:41:50.798Z",
         },
+        {
+          id: "8b5f4a3c-0c68-4a24-8b4b-78907b5e0c88",
+          title: "Guia Completo de TypeScript",
+          description:
+            "Um artigo detalhado explicando os conceitos fundamentais do TypeScript.",
+          url: null,
+          total_likes: 3,
+          type: "text",
+          cover: null,
+          company_id: "e6f7f5e9-191a-4ec1-8dcb-d10892758665",
+          created_at: "2025-02-03T22:41:50.798Z",
+        },
       ],
       selectedContent: null,
       userProgress: 70,

@@ -33,13 +33,13 @@
       <div
         class="content-player bg-gray-900 rounded-lg overflow-hidden shadow-inner"
       >
-        <template v-if="contentType === 'mp4'">
+        <template v-if="contentType === 'video'">
           <video controls class="w-full max-h-96">
             <source :src="contentDetail.url" type="video/mp4" />
             Seu navegador não suporta o elemento de vídeo.
           </video>
         </template>
-        <template v-else-if="contentType === 'jpg' || contentType === 'png'">
+        <template v-else-if="contentType === 'image'">
           <img
             :src="contentDetail.url"
             alt="Conteúdo de imagem"
@@ -61,6 +61,13 @@
           >
             Acessar link externo
           </a>
+        </template>
+        <template v-else-if="contentType === 'text'">
+          <div
+            class="bg-gray-900 text-white p-6 rounded-lg max-h-96 overflow-y-auto"
+          >
+            <p class="whitespace-pre-wrap">{{ contentDetail.text_content }}</p>
+          </div>
         </template>
         <template v-else>
           <p class="text-center py-4 text-gray-400">
@@ -98,8 +105,8 @@ export default {
   },
   computed: {
     contentType() {
-      if (this.contentDetail && this.contentDetail.format) {
-        return this.contentDetail.format;
+      if (this.contentDetail && this.contentDetail.type) {
+        return this.contentDetail.type;
       } else if (this.content && this.content.type) {
         return this.content.type;
       }
@@ -131,10 +138,12 @@ export default {
                 title
                 description
                 url
+                text_content
                 created_at
                 allow_download
                 is_embeddable
                 format
+                type
                 bytes
                 metadata
               }
