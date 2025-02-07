@@ -2,6 +2,10 @@
 
 Player de Conteúdo é um desafio da Learning Rocks. O projeto foi construído com **Nuxt 2** e **Vue 2**, utilizando diversas tecnologias para criar um player funcional e dinâmico.
 
+## 📰 OBS
+
+Na branch ```feat-text-provision```, você pode encontrar a feature integrada de provisionamento de texto. Para que funcione, é necessário seguir o passo a passo descrito, configurando o backend modificado por mim.
+
 ## 🎯 Decisões Técnicas e Abordagem
 
 Apesar de ser um código relativamente simples, busquei seguir as melhores práticas atuais durante o desenvolvimento. Tenho menos experiência com Vue, mas aproveitei o projeto como uma oportunidade de aprendizado e consegui evoluir bastante no uso da tecnologia.
